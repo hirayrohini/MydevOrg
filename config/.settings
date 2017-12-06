@@ -1,0 +1,18 @@
+{
+    "projectName": "TestProject",
+    "username": "rohini@sales.com",
+    "id": "a5fcd370-36e5-11e7-b8e4-3786dd8362e4",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://ap5.salesforce.com",
+    "workspace": "D:\\SFDC_ACF",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "StaticResource"
+    ]
+}

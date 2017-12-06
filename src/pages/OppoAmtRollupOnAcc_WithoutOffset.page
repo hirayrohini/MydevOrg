@@ -1,0 +1,56 @@
+<apex:page controller="OppoAmtRollupOnAccContWithoutOffset" tabstyle="account" sidebar="false">
+    <apex:form >
+    <apex:actionFunction name="refreshPageSize" action="{!refreshPageSize}" status="fetchStatus" reRender="PbId"/>
+    <apex:pageBlock Id="PbId">
+        <apex:pageblockButtons location="Top">
+                
+            </apex:pageblockButtons>
+         
+            <apex:pageBlockTable value="{!account}" var="a" id="list">
+                <apex:column headerValue="Name">
+                    <apex:outputLink value="/{!a.id}" target="_blank"> {!a.name} 
+                    </apex:outputLink>
+                </apex:column>
+                <apex:column value="{!a.Total__c}" />
+                <apex:column >
+                    <apex:commandButton value="Calculate" onclick="CalculateOppoTotal('{!a.Id}'); return false" disabled="{!mapAccountIDtotal[a.Id].Total__c > 0}">
+                    </apex:commandButton>
+                </apex:column>
+                <apex:column headerValue="AmountTotal">
+                    <apex:outputText value="{!mapAccountIDtotal[a.Id].Total__c}" title="Blank"/>
+                </apex:column>
+            
+            </apex:pageBlockTable>
+            <apex:actionFunction Id="CalculateOppoTotal" action="{!CalculateTotal}" name="                                  CalculateOppoTotal" rerender="PbId">
+                <apex:param name="getCurrAccountId" assignTo="{!accId}" value=""/>
+            </apex:actionFunction>
+            <apex:panelGrid columns="8"> 
+                 
+                <apex:selectList value="{!size}" multiselect="false" size="1" onchange="refreshPageSize();">
+                    <apex:selectOptions value="{!paginationSizeOptions}"/>
+                </apex:selectList>
+                 
+                <apex:commandButton status="fetchStatus" reRender="PbId" value="First" action="{!setCon.first}" disabled="{!!setCon.hasPrevious}" title="First Page"/> 
+  
+                <apex:commandButton status="fetchStatus" reRender="PbId" value="Previous" action="{!setCon.previous}" disabled="{!!setCon.hasPrevious}" title="Previous Page"/> 
+  
+                <apex:commandButton status="fetchStatus" reRender="PbId" value="Next" action="{!setCon.next}" disabled="{!!setCon.hasNext}" title="Next Page"/> 
+  
+                <apex:commandButton status="fetchStatus" reRender="PbId" value="Last" action="{!setCon.last}" disabled="{!!setCon.hasNext}" title="Last Page"/> 
+  
+                <apex:outputText >{!(setCon.pageNumber * size)+1-size}-{!IF((setCon.pageNumber * size)>noOfRecords, noOfRecords,
+                     (setCon.pageNumber * size))} of {!noOfRecords}
+                </apex:outputText> 
+                       
+                <apex:outputPanel >                      
+                    <apex:actionStatus id="fetchStatus" >
+                        <apex:facet name="start" >
+                          <img src="/img/loading.gif" />                    
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:outputPanel> 
+  
+            </apex:panelGrid>  
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,55 @@
+<apex:page controller="DynamicSOQLController">
+<apex:form > 
+      <apex:pageBlock >
+          <apex:pageBlockSection columns="1">
+              <apex:pageBlockSectionItem >
+                  <apex:outputlabel value="Select Object :"/> 
+                      <apex:actionRegion >      
+                           <apex:selectList value="{!selectedObject}" size="1">
+                                <apex:selectOptions value="{!ObjectNames}"/>
+                                <apex:actionSupport event="onchange" rerender="myFields"/>
+                            </apex:selectList>
+                      </apex:actionRegion>                         
+              </apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem >
+                  <apex:outputPanel id="myFields">
+                  <apex:actionRegion >
+                      <c:multiselectpicklist leftlabel="Available Fields" leftoption="{!ObjectFields}" rightlabel="Selected Fields" rightoption="{!selectedFields}" size="14" width="150px">
+                      </c:multiselectpicklist>
+                  </apex:actionRegion> 
+                  </apex:outputPanel>
+              </apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem >
+                  <apex:outputlabel value="Maximum # Records to Display :"/> 
+                      <apex:actionRegion >      
+                           <apex:selectList value="{!numberOfRecords}" multiselect="false" size="1">
+                          <apex:selectOptions value="{!recordCountOptions}"/>
+                        </apex:selectList>
+                     </apex:actionRegion>                                       
+              </apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem >
+                      <apex:outputText value="Sort As :"/>
+                      <apex:actionRegion >      
+                          <apex:selectRadio value="{!sortOrder}">
+                            <apex:selectOptions value="{!items}"/>
+                          </apex:selectRadio>
+                      </apex:actionRegion> 
+              </apex:pageBlockSectionItem>
+          
+              <apex:pageBlockSectionItem >
+                  <apex:commandButton action="{!getRecords}" value="Execute Query"/>
+              </apex:pageBlockSectionItem>
+
+              <apex:pageBlockSectionItem >
+                  <apex:outputText value="The formatted time right now is:
+                         {0,date,yyyy.MM.dd G 'at' HH:mm:ss z} " style="border:1px solid black; padding-top: 8px; padding-bottom: 30px; padding-left: 5px; padding-right: 5px" >
+                  <apex:param value="{! NOW() }" />
+                  </apex:outputText>
+             </apex:pageBlockSectionItem>
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

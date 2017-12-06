@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"str",
+				"String"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"padding-t",
+				"padding-bottom"
+			],
+			[
+				"height",
+				"max-height"
+			],
+			[
+				"page",
+				"apex:pageBlockButtons"
+			],
+			[
+				"out",
+				"apex:outputLabel"
+			],
+			[
+				"col",
+				"columns\t(Integer)"
+			],
+			[
+				"sele",
+				"selectedFields"
+			],
+			[
+				"c",
+				"conObj"
+			],
+			[
+				"new",
+				"newCont"
+			],
+			[
+				"con",
+				"conOld"
+			],
+			[
+				"l",
+				"conNewList"
+			],
+			[
+				"set",
+				"setPhone"
+			],
+			[
+				"se",
+				"setPhone"
+			],
+			[
+				"map",
+				"mapPhoneId"
+			],
+			[
+				"co",
+				"conNewList"
+			],
+			[
+				"isu",
+				"isUpdate"
+			],
+			[
+				"is",
+				"isBefore"
+			],
+			[
+				"pro",
+				"Product__c"
+			],
+			[
+				"PRO",
+				"Product__c"
+			],
+			[
+				"pr",
+				"Product2"
+			],
+			[
+				"Product",
+				"Product2"
+			],
+			[
+				"si",
+				"PUBLIC size() \tInteger"
+			],
+			[
+				"Cost",
+				"Costing__c"
+			],
+			[
+				"Produc",
+				"Product2"
+			],
+			[
+				"Pr",
+				"Product2"
+			],
+			[
+				"qu",
+				"Quantity__c"
+			],
+			[
+				"Co",
+				"Costing__c"
+			],
+			[
+				"p",
+				"Product2"
+			],
+			[
+				"Qua",
+				"Quantity_1__c"
+			],
+			[
+				"Inte",
+				"Integer\t[Standard Apex Class]"
+			],
+			[
+				"putall",
+				"PUBLIC putAll(LIST entries) \tvoid"
+			],
+			[
+				"Acc",
+				"Account"
+			],
+			[
+				"A",
+				"Account"
+			],
+			[
+				"op",
+				"oppoInst"
+			],
+			[
+				"get",
+				"PUBLIC get(ANY key) \tString"
+			],
+			[
+				"on",
+				"onclick\t(String)"
+			],
+			[
+				"a",
+				"action\t(ApexPages.Action)"
+			],
+			[
+				"ou",
+				"apex:outputText"
+			],
+			[
+				"hea",
+				"headerValue\t(String)"
+			],
+			[
+				"val",
+				"value\t(String)"
+			],
+			[
+				"oupt",
+				"apex:outputLink"
+			],
+			[
+				"o",
+				"oppoInst"
+			],
+			[
+				"opp",
+				"oppoInst"
+			],
+			[
+				"oppo",
+				"oppoList"
+			],
+			[
+				"de",
+				"debug(Anydatatype_msg)"
+			],
+			[
+				"S",
+				"scope"
+			],
+			[
+				"Account",
+				"AccountId"
+			],
+			[
+				"li",
+				"listOppo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/pages/OppoAmtRollupOnAcc_WithoutOffset.page",
+			"settings":
+			{
+				"buffer_size": 3154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/OppoAmtRollupOnAccContWithoutOffset.cls",
+			"settings":
+			{
+				"buffer_size": 2608,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/SFDC_ACF/TestProject",
+		"/D/SFDC_ACF/TestProject/src",
+		"/D/SFDC_ACF/TestProject/src/classes",
+		"/D/SFDC_ACF/TestProject/src/components",
+		"/D/SFDC_ACF/TestProject/src/pages"
+	],
+	"file_history":
+	[
+		"/D/SFDC_ACF/TestProject/src/components/multiselectpicklist.component",
+		"/D/SFDC_ACF/TestProject/src/classes/DynamicSOQLController.cls",
+		"/D/SFDC_ACF/TestProject/src/pages/DynamicSOQL.page",
+		"/D/SFDC_ACF/TestProject/src/classes/objectController.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/ContactTriggerHandlerTest.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/ContactTriggerHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/triggers/ContactTrigger.trigger",
+		"/D/SFDC_ACF/TestProject/src/classes/LeadTriggerHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/TestLeadTriggerHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/triggers/LeadTrigger.trigger",
+		"/D/SFDC_ACF/TestProject/src/classes/ProductCostingUpdateHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/TestProductCostingUpdateHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/triggers/ProductCostingUpdate.trigger",
+		"/D/SFDC_ACF/TestProject/src/classes/TestCalculateOppoAmtRollupOnAccExtension.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/leadTriggerHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/listTriggerHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/listTestController.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/BatchOppoAmtRollupOnAccount.cls",
+		"/D/SFDC_ACF/TestProject/src/triggers/PopulateOppoAmountOnAccount.trigger",
+		"/D/SFDC_ACF/TestProject/src/classes/CalculateOppoAmtRollupOnAccExtension.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/PopulateOppoAmountOnAccountHandler.cls-meta.xml",
+		"/D/SFDC_ACF/TestProject/src/pages/CalculateOppoAmtRollupOnAccount.page",
+		"/D/SFDC_ACF/TestProject/src/classes/OppoAmtRollupExt.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/RollupOppoOnAccount.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/PopulateOppoAmountOnAccountHandler.cls",
+		"/D/SFDC_ACF/TestProject/src/classes/CalculateOppoAmtRollupOnAccController.cls",
+		"/D/SFDC_ACF/TestProject/src/triggers/PopulateOppoAmountOnAccount.trigger-meta.xml",
+		"/D/SFDC_ACF/ACF - BOMI/src/classes/GraduateAudit.cls"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"accID",
+			"MethodOppoAmtRollupExt",
+			"selectedfields",
+			"selectedfield",
+			"selectedObject",
+			"leadList",
+			");\n",
+			"\n        listCostingUpdate ",
+			"lstProductsInsert",
+			"mapProductIdCostingUpdate",
+			"mapProductIdCosting",
+			"lstProductsUpdate",
+			"mapProductIdvalues",
+			"lstAccount",
+			"setcon",
+			"LimitSize",
+			"OffsetSize",
+			"list_size",
+			"accInst",
+			"auditProgramEnrollments"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/pages/OppoAmtRollupOnAcc_WithoutOffset.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								814,
+								814
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/classes/OppoAmtRollupOnAccContWithoutOffset.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "TestProject.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"oppoamtrollupext",
+				"src\\classes\\OppoAmtRollupExt.cls"
+			],
+			[
+				"graduateauditbatch",
+				"src\\classes\\GraduateAuditBatch.cls"
+			],
+			[
+				"graduateaudit",
+				"src\\pages\\GraduateAudit.page"
+			],
+			[
+				"gradu",
+				"src\\classes\\GraduateAudit.cls"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 405.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

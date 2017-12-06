@@ -1,0 +1,41 @@
+<apex:page controller="CalculateOppoAmtRollupOnAccExtension" tabstyle="account" sidebar="false">
+	<apex:form >
+    <apex:pageBlock Id="PbId">
+    <apex:pageBlockButtons >
+   			<apex:outputPanel id="myButtons" >  
+   				<apex:commandButton action="{!First}" title="First" value="First"  reRender="PbId,myButtons" disabled="{!DisablePrevious}" status="SearchStatus"/>    
+        		<apex:commandButton action="{!Next}" title="Next" value="Next" reRender="PbId,myButtons" disabled="{!DisableNext}" status="SearchStatus"/>
+        		<apex:commandButton action="{!Previous}" title="Previous" value="Previous"  reRender="PbId,myButtons" disabled="{!DisablePrevious}" status="SearchStatus"/>
+        		<apex:commandButton action="{!last}" title="Last" value="Last"  reRender="PbId,myButtons" disabled="{!DisableNext}" status="SearchStatus"/>
+   				<apex:actionstatus id="SearchStatus">
+    			<apex:facet name="start">
+        			<div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height:100%;opacity:0.65;width:100%;">
+	            		<div class="waitingHolder" style="top: 100px; width: 91px;">
+	            			<img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+	            			<span class="waitingDescription">Loading...</span>
+	            		</div>
+        			</div>
+   				</apex:facet>
+				</apex:actionstatus>
+			</apex:outputPanel>
+   		</apex:pageBlockButtons>
+    	<apex:pageBlockTable value="{!Accounts}" var="a" id="list">
+        		<apex:column headerValue="Name"> 
+        			<apex:outputLink value="/{!a.id}" target="_blank"> {!a.name} 
+        			</apex:outputLink>
+        		</apex:column>
+        		<apex:column value="{!a.Total__c}" />
+        		<apex:column >
+            		<apex:commandButton value="Calculate" status="Status" onclick="CalculateOppoTotal('{!a.Id}'); return false" disabled="{!mapAccountIDtotal[a.Id].Total__c > 0}" >
+            		</apex:commandButton>
+        		</apex:column>
+        		<apex:column headerValue="AmountTotal">
+                	<apex:outputText value="{!mapAccountIDtotal[a.Id].Total__c}" title="Blank"/>
+        		</apex:column>
+        	</apex:pageBlockTable>
+      		<apex:actionFunction Id="CalculateOppoTotal" action="{!CalculateTotal}" name="									CalculateOppoTotal" rerender="PbId">
+       			<apex:param name="getCurrAccountId" assignTo="{!accId}" value=""/>
+    		</apex:actionFunction>
+   		</apex:pageBlock>
+	</apex:form>
+</apex:page>
